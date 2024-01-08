@@ -1,0 +1,12 @@
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\bin\Debug\net8.0\ePizzaHub.Models.deps.json
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\bin\Debug\net8.0\ePizzaHub.Models.dll
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\bin\Debug\net8.0\ePizzaHub.Models.pdb
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.csproj.AssemblyReference.cache
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.AssemblyInfo.cs
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.dll
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\refint\ePizzaHub.Models.dll
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ePizzaHub.Models.pdb
+C:\inetpub\wwwroot\ePizzaHub\ePizzaHub.Models\obj\Debug\net8.0\ref\ePizzaHub.Models.dll
