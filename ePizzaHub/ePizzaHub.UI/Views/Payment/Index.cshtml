@@ -124,7 +124,7 @@
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
     var options = {
-        "key": "@Model.RazorpayKey", // Enter the Key ID generated from the Dashboard
+        "key": "@(Model.RazorpayKey)", // Enter the Key ID generated from the Dashboard
         "amount": "@(Model.GrandTotal * 100)", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "@Model.Currency",
         "name": "@Model.Name", //your business name
@@ -150,12 +150,17 @@
             "color": "#3399cc"
         }
     };
+    console.log(options);
     var rzp = new Razorpay(options);
-    window.onload = function () {
-        document.getElementById('rzp-button').click();
-    };
-    document.getElementById('rzp-button').onclick = function (e) {
+    // window.onload = function () {
+    //     document.getElementById('rzp-button').click();
+    // };
+    // document.getElementById('rzp-button').onclick = function (e) {
+    //     rzp.open();
+    //     e.preventDefault();
+    // }
+    function submitToPayment() {
         rzp.open();
-        e.preventDefault();
+        // e.preventDefault();
     }
 </script>

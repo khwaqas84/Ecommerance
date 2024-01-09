@@ -19,9 +19,12 @@ namespace ePizzaHub.Services.Implementations
             paymrepository = _paymentrepo;
             cartRepository = _cartRepo;
             configuration = _configuration;
-            if (_client != null)
+            if (_client == null)
             {
-                _client = new RazorpayClient(configuration["RazorPay:Key"], configuration["RazorPay:Secret"]);
+                string Key      = configuration["RazorPay:Key"];
+                string Secret   = configuration["RazorPay:Secret"];
+
+                _client = new RazorpayClient(Key, Secret);
             }
 
         }
@@ -29,9 +32,12 @@ namespace ePizzaHub.Services.Implementations
         public string CreateOrder(decimal amount, string Currency, string receipt)
         {
             Dictionary<string, object> options = new Dictionary<string, object>();
-            options.Add("amount", 50000); // amount in the smallest currency unit
-            options.Add("receipt", "order_rcptid_11");
-            options.Add("currency", "INR");
+            options.Add("amount", amount); // amount in the smallest currency unit
+            options.Add("receipt", receipt);
+            options.Add("currency", Currency);
+            //options.Add("amount", 50000); // amount in the smallest currency unit
+            //options.Add("receipt", "order_rcptid_11");
+            //options.Add("currency", "INR");
             Razorpay.Api.Order order = _client.Order.Create(options);
             return order["id"].ToString();
         }
